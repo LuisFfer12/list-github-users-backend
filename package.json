@@ -5,7 +5,8 @@
   "author": "Luis Fernando Oliveira",
   "license": "MIT",
   "scripts": {
-    "start": "sucrase-node src/server.js"
+    "start": "node dist/server.js",
+    "build": "sucrase ./src -d ./dist --transforms imports"
   },
   "dependencies": {
     "axios": "^0.19.0",
